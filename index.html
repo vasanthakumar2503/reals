@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro City Developers findmyplots.com</title>
+    <style>
+        .color{
+            background-color: rgb(248, 226, 197);
+        } 
+        .img{
+            width: 300px;
+            height: 100px;
+            /* padding: 0,1,10; */
+            align-items: center;
+            margin-left: 40%;
+            margin-top: 10%;
+            /* margin-bottom: 80%; */
+            /* size:inherit; */
+
+        }
+        .index{
+            text-align: center;
+        }
+        .sub{
+            text-align: center;
+        }
+        .button1{
+            border: none;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 650px;
+            cursor: pointer;
+            border-radius: 50px;
+            background-color: blanchedalmond;
+            color: #000;
+            text-align: center;
+            border-style:groove;
+        }
+        .button2{
+            border: none;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 678px;
+            cursor: pointer;
+            border-radius: 50px;
+            background-color: blanchedalmond;
+            color: #000;
+            text-align: center;
+            border-style:groove;
+        }
+        .button3{
+            border: none;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 728px;
+            cursor: pointer;
+            border-radius: 50px;
+            background-color: blanchedalmond;
+            color: #000;
+            text-align: center;
+            border-style:groove;
+        }
+        .about{
+            text-align: center;
+            margin-right: 35%;
+        }
+        .items{
+            text-align: center;
+            margin-right: 35%;
+            
+        }
+        .vl{
+            border-left: 2px solid rgb(11, 11, 11);
+            height: 50px;
+            position: absolute;
+            text-align: justify;
+            text-wrap:right;
+            left: 33%;
+            margin-left: -3px;
+            margin-right: 25%;
+            /* top: 0; */
+        }
+        .pr{
+            float:right;
+            width: 450px;
+            /* height: 400px; */
+            margin-top: -590px;
+            margin-right: 18%;
+            font-size:x-large;
+            margin-left: 50%;
+            border-top-right-radius: 50%;
+            /* top: right; */
+        }
+        .cender{
+            text-align:left;
+            margin-left: 10%;
+        }
+        .far fa-calendar-alt{
+            color: #000;
+        }
+        .dot{
+            text-align: center;
+            margin-top: -4%;
+            margin-right: 5%;
+        }
+        .dropdown{
+            text-align:right;
+            margin-right: 11%;
+            font-size: larger;
+            margin-top: -4.05%;
+        }
+        .card-list .card-item  .card-link{
+            width: 350px;
+            display: block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            margin-top:10% ;
+        }
+        .card-item1 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 30%;
+            margin-top: -51.2%;
+        }
+        .card-item2 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 60%;
+            margin-top: -51.2%;
+        }
+        .card-item3 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 0%;
+            margin-top: 8.2%;
+        }
+        .card-item4 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 30%;
+            margin-top: -51.2%;
+        }
+        .card-item5 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 60%;
+            margin-top: -51.8%;
+        }
+        .card-item6 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 0%;
+            margin-top: 10.8%;
+        }
+        .card-item7 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 30%;
+            margin-top: -51.2%;
+        }
+        .card-item8 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 0%;
+            margin-top: 10.8%;
+        }
+        .card-item9 .card-link{
+            width: 350px;
+            display:block;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 0%;
+            margin-top: 10.8%;
+        }
+
+        .card-list .card-link .card-image{
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+.line1{
+        color: #000;
+        text-align: center;
+        font-size: large;
+        font-style:italic;
+
+}
+.under{
+    color: #0505055f;
+}
+.add{
+    color: rgb(135, 40, 40);
+    font-style: italic;
+}
+.name{
+    color:rgb(110, 98, 82) ;
+    text-align: center;
+}
+.layout{
+    text-align: center;
+    color: #000;
+
+}
+.av{
+    color: #000;
+}
+.plot1{
+    color: #000;
+}
+.emi{
+    color: #000;
+}
+.yes{
+    color: #000;
+}
+.pra{
+    color: #000;
+}
+.area{
+    text-align: center;
+    color: rgb(54, 36, 36);
+    font-size: larger;
+}
+    </style>
+</head>
+<body class="color">
+    <!-- <div class="mainimg"> -->
+        <img class="img" src="MetroCity Developers.png" img sizes="30px">
+    </div>
+    <div class="index">
+        <p><b>Metrocity Developers</b></p>
+    </div>
+    <div class="sub">
+        <p>No 75, 1st Floor, Manapuram chits, NGN Street, New Sidhapudur, Gandhipuram, 641044</p>
+    </div>
+    <div class="button1">
+        <i class='fas fa-envelope'></i><a href="#">customercare@metrocitydevelopers.in</a>
+    </div>
+    <div class="button2">
+        <i class='fas fa-globe'></i><a href="#">https://metrocitydevelopers.in</a>
+        </div>
+        <div class="button3">
+        <i class='fas fa-mobile-alt'></i><a href="#">04224707770</a>
+    </div>
+    <div class="about">
+        <h3>About
+        </h3>
+    </div>
+    <div class="items">
+        <div class="vl"></div><br><br>
+            <i class='far fa-calendar-alt'></i>
+            <h4>Number of years</h4>
+            <p><b>15</b></p>
+        <div class="vl"></div><br><br>
+        <i class='fas fa-city'></i>
+            <h4>Number of Cities Covered</h4>
+            <p><b>7</b></p>
+        <div class="vl"></div><br><br>
+        <i class='fas fa-tasks'></i>
+        <h4>Number of Project Completed</h4>
+        <p><b>23</b></p>
+        <div class="vl"></div><br><br>
+        <i class="fa fa-clock-o"></i>
+        <h4>Number of On-Going Projects</h4>
+        <p><b>13</b></p>
+    </div>
+    <div class="pr">
+        <p>Metro City Developers, with 15 Years of experience & 2500 delighted customers, is a well-established name in Coimbatore. We have executed numerous projects in and around the area, offering excellent customer service to both domestic and international clients. We primarily focus on the necessity and significance of an investment. We strive to deliver the best in class environment Pre-sales and Post-sales. We make sites and plots available at a very reasonable and affordable price. Residential plots, Independent villas, and farmhouses are also included in our projects.
+        </p>
+    </div>
+    <div class="cender">
+        <h3>available projects (10)</h3><div class="dot"><p>______________________________________________________________________________________________________SELECT CITY</div></p><div class="dropdown">ALL CITY</div>
+    </div>
+    <div class="area"><h3>KINATHUKADAVU (3)</h3></div>
+    <div class="container">
+        <div class="card-wrapper">
+            <ul class="card-list">
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Arun Avenue Phase II</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Kinathukadavu , Coimbatore.</b></p>
+                        <img src="1.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <li class="card-item1">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Sri Siva Sakthi Residency</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Kinathukadavu , Coimbatore.</b></p>
+                        <img src="3.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <li class="card-item2">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Coke Park</b></p>
+                    <p class="under">Farm Lands</p>
+                    <p class="add"><b>Kinathukadavu , Coimbatore.</b></p>
+                        <img src="2.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="area"><h3><b>COIMBATORE (5)</b></h3></div>
+                <div class="container">
+                    <div class="card-wrapper">
+                        <ul class="card-list">
+                <li class="card-item3">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Royal Garden</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Thekaani , Coimbatore.</b></p>
+                        <img src="4.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <li class="card-item4">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Vishnu Avenue</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Onnipalayam , Coimbatore.</b></p>
+                        <img src="5.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <li class="card-item5">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Teak Park</b></p>
+                    <p class="under">Farm Lands</p>
+                    <p class="add"><b> Tamaraikulam , Coimbatore.</b></p>
+                        <img src="6.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <li class="card-item6">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Golden City</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Pooluvampalayam , Coimbatore.</b></p>
+                        <img src="7.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <li class="card-item7">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Orange City</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Thondamuthur , Coimbatore.</b></p>
+                        <img src="8.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+                <div class="area"><h3><b>OTHAKALMANDAPAM (1)</b></h3></div>
+
+                <li class="card-item8">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Fruit Bae Farmland</b></p>
+                    <p class="under">Farm Lands</p>
+                    <p class="add"><b>Othakalmandapam, Coimbatore.</b></p>
+                        <img src="9.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                    <div class="area"><h3><b>SIRUMUGAI (1)</b></h3></div>
+
+                </li>
+                <li class="card-item9">
+                    <a href="#" class="card-link">
+                    <p class="line1"><b>Greenwood</b></p>
+                    <p class="under">Residential plots</p>
+                    <p class="add"><b>Sirumugai , Coimbatore.</b></p>
+                        <img src="10.webp" alt="Card Image" class="card-image">
+                    <h3 class="name">metrocity developers</h3>
+                    <p class="layout">10 Layouts</p>
+                    <p class="av">Availability</p>
+                    <p class="plot1"><b>70 plots</b></p>
+                    <p class="emi">EMI</p>
+                    <p class="yes"><B>Yes</B></p>
+                    <p class="pra">  Welcome to Arun Avenue Phase II by METRO CITY DEVELOPERS. It is located in Solavampalayam, Ellai karuparayan kovil, Kinathukadavu, Coimbatore - 641032. This layout is spread over 11 Acres and contains 228 plots. This layout has 15+ amenities for comfortable living and nearby schools, parks, playgrounds for kids. Loans are available from SBI, HDFC bank and LIC HFL </p>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
